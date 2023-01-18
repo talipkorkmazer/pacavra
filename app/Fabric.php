@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Fabric extends Model
 {
@@ -20,8 +21,8 @@ class Fabric extends Model
         return $this->belongsTo(FabricCategory::class);
     }
 
-    public function collections(): BelongsTo
+    public function collections(): BelongsToMany
     {
-        return $this->belongsTo(FabricCollection::class);
+        return $this->belongsToMany(FabricCollection::class, 'fabrics_collections');
     }
 }

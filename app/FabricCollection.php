@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class FabricCollection extends Model
@@ -14,8 +15,8 @@ class FabricCollection extends Model
         'image',
     ];
 
-    public function fabrics(): HasMany
+    public function fabrics(): BelongsToMany
     {
-        return $this->hasMany(Fabric::class);
+        return $this->belongsToMany(Fabric::class, 'fabrics_collections');
     }
 }
