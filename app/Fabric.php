@@ -19,4 +19,9 @@ class Fabric extends Model
     {
         return $this->belongsTo(FabricCategory::class);
     }
+
+    public function collections(): BelongsTo
+    {
+        return $this->belongsTo(FabricCollection::class);
+    }
 }
