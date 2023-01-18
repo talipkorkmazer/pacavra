@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68e164b2-b05e-4c16-8796-8f81922708b0" name="Changes" comment="" />
+    <list default="true" id="68e164b2-b05e-4c16-8796-8f81922708b0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/voyager.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/voyager.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +168,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.0.0",
     "javascript.nodejs.core.library.typings.version": "18.0.0",
-    "last_opened_file_path": "/Users/talip/Desktop/PersonalProjects/FreelanceProjects/pacavra/app",
+    "last_opened_file_path": "/Users/talip/Desktop/PersonalProjects/FreelanceProjects/pacavra/resources/views/vendor/voyager/fabrics",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -176,11 +179,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/vendor/voyager/fabrics" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/Http" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/storage/app" />
     </key>
   </component>
   <component name="RunManager">
@@ -204,7 +207,7 @@
       <workItem from="1672386364866" duration="1454000" />
       <workItem from="1672394859164" duration="3000" />
       <workItem from="1674064367197" duration="3694000" />
-      <workItem from="1674068083085" duration="1295000" />
+      <workItem from="1674068083085" duration="3546000" />
     </task>
     <servers />
   </component>
