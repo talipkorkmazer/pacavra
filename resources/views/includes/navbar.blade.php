@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#contact">İletişim</a></li>
+                <li><a href="/#contact">İletişim</a></li>
             </ul>
         </div>
         <!-- End Main Menu -->
