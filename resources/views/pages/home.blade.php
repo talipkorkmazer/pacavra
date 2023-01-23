@@ -185,7 +185,7 @@
                             <div class="">
                                 <a href="/category/{{$category->slug}}">
                                     <img src="{{ asset("public/public/$category->image") }}"
-                                         alt='{{ $category->name }}' />
+                                         alt='{{ $category->name }}'/>
                                 </a>
                             </div>
                             <h3 class="services-title mt-2">{{ $category->name }}</h3>
@@ -920,5 +920,5 @@
         </div>
     </section>--}}
     <!-- End Call Action Section -->
-
+    <a id="video" data-fancybox="video-gallery" href="{{ asset('public/public/video/IMG_4091.mp4') }}"></a>
 @endsection

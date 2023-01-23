@@ -23,3 +23,4 @@
 <script src="{{ asset('public/public/js/splitting.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('public/public/js/all.js') }}" type="text/javascript"></script>
 <script src="{{ asset('public/public/js/custom.js') }}" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

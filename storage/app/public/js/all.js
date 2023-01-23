@@ -44,6 +44,10 @@
         init_shortcodes();
         init_tooltips();
         init_masonry();
+        const video = $('#video');
+        if (video.length) {
+            video[0].click();
+        }
     });    
     
     $(window).resize(function(){

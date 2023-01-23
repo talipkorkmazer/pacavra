@@ -20,3 +20,4 @@
 <link rel="stylesheet" href="{{ asset('public/public/css/animate.min.css') }}">
 <link rel="stylesheet" href="{{ asset('public/public/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('public/public/css/custom.css') }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
