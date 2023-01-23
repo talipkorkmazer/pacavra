@@ -184,7 +184,7 @@
                         <div class="services-item text-center wow fadeIn" data-wow-delay="0" data-wow-duration="1.5s">
                             <div class="">
                                 <a href="/category/{{$category->slug}}">
-                                    <img src="{{ asset("public/$category->image") }}"
+                                    <img src="{{ asset("public/public/$category->image") }}"
                                          alt='{{ $category->name }}' />
                                 </a>
                             </div>

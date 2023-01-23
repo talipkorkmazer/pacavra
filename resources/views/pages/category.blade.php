@@ -51,7 +51,7 @@
                         @endphp
                         <div class="post-prev-img mb-30 wow fadeScaleIn" data-wow-duration="1s">
                             <a href="/fabric/{{ $fabric->slug }}" class="">
-                                <img src="{{ asset("public/$image") }}" alt="{{ $fabric->name }}" /></a>
+                                <img src="{{ asset("public/public/$image") }}" alt="{{ $fabric->name }}" /></a>
                         </div>
                         <h3>{{ $fabric->name }}</h3>
                     </div>

@@ -25,9 +25,9 @@
                             @foreach($images as $image)
                                 <div style="display: inline-block; position: relative;">
                                     <i style='position: absolute' class="fas fa-download" aria-hidden="true"
-                                       data-download='{{ asset("public/$image") }}'></i>
+                                       data-download='{{ asset("public/public/$image") }}'></i>
                                     <img class='fabric-texture' style='width: 100px; height: 100px; border: 1px solid black; cursor:pointer;'
-                                         src='{{ asset("public/$image") }}'
+                                         src='{{ asset("public/public/$image") }}'
                                          alt='{{ $fabric->name }}'>
                                 </div>
                             @endforeach
