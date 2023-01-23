@@ -2,7 +2,7 @@
 @section('content')
     <!-- Home Section -->
     <section class="home-section parallax-5"
-             data-background="{{ asset('public/images/pacavra/IMG-20181023-WA0002.jpg') }}" id="home">
+             data-background="{{ asset('public/public/images/pacavra/IMG-20181023-WA0002.jpg') }}" id="home">
         <div class="container min-height-100vh d-flex align-items-center pt-100 pb-100">
 
             <!-- Hero Content -->
@@ -57,10 +57,10 @@
                 <!-- Team item -->
                 <div class="col-md-4 mb-xs-30">
                     <div class="team-item-wrap wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1.2s">
-                        <div class="team-item-decoration" style="background-image: url({{ asset('public/images/team/team-decoration-1.jpg') }});"></div>
+                        <div class="team-item-decoration" style="background-image: url({{ asset('public/public/images/team/team-decoration-1.jpg') }});"></div>
                         <div class="team-item">
                             <div class="team-item-image">
-                                <img src="{{ asset('public/images/team/team-1.jpg') }}" alt="" />
+                                <img src="{{ asset('public/public/images/team/team-1.jpg') }}" alt="" />
                                 <div class="team-item-detail">
                                     <p class="team-item-detail-title">
                                         Hello & Welcome!
@@ -91,10 +91,10 @@
                 <!-- Team item -->
                 <div class="col-md-4 mb-xs-30">
                     <div class="team-item-wrap wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.2s">
-                        <div class="team-item-decoration" style="background-image: url({{ asset('public/images/team/team-decoration-2.jpg') }});"></div>
+                        <div class="team-item-decoration" style="background-image: url({{ asset('public/public/images/team/team-decoration-2.jpg') }});"></div>
                         <div class="team-item">
                             <div class="team-item-image">
-                                <img src="{{ asset('public/images/team/team-2.jpg') }}" alt="" />
+                                <img src="{{ asset('public/public/images/team/team-2.jpg') }}" alt="" />
                                 <div class="team-item-detail">
                                     <p class="team-item-detail-title">
                                         Nice to meet!
@@ -125,10 +125,10 @@
                 <!-- Team item -->
                 <div class="col-md-4 mb-xs-30">
                     <div class="team-item-wrap wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1.2s">
-                        <div class="team-item-decoration" style="background-image: url({{ asset('public/images/team/team-decoration-3.jpg') }});"></div>
+                        <div class="team-item-decoration" style="background-image: url({{ asset('public/public/images/team/team-decoration-3.jpg') }});"></div>
                         <div class="team-item">
                             <div class="team-item-image">
-                                <img src="{{ asset('public/images/team/team-3.jpg') }}" alt="" />
+                                <img src="{{ asset('public/public/images/team/team-3.jpg') }}" alt="" />
                                 <div class="team-item-detail">
                                     <p class="team-item-detail-title">
                                         Whats Up!
@@ -214,11 +214,11 @@
 
                 <div class="col-lg-6 relative">
                     <div class="banner-image-1">
-                        <img src="{{ asset('public/images/promo-1.jpg') }}" alt="" class="wow scaleOutIn"
+                        <img src="{{ asset('public/public/images/promo-1.jpg') }}" alt="" class="wow scaleOutIn"
                              data-wow-duration="1.2s" data-wow-offset="292" />
                     </div>
                     <div class="banner-image-2">
-                        <img src="{{ asset('public/images/promo-2.jpg') }}" alt="" class="wow scaleOutIn"
+                        <img src="{{ asset('public/public/images/promo-2.jpg') }}" alt="" class="wow scaleOutIn"
                              data-wow-duration="1.2s" data-wow-offset="70" />
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                     <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
                         <div class="work-img">
                             <div class="work-img-bg wow-p scalexIn"></div>
-                            <img src="{{ asset('public/images/portfolio/projects-1.jpg') }}" alt="Work Description"
+                            <img src="{{ asset('public/public/images/portfolio/projects-1.jpg') }}" alt="Work Description"
                                  class="wow-p fadeIn" data-wow-delay="1s" />
                         </div>
                         <div class="work-intro">
@@ -293,7 +293,7 @@
                     <a href="portfolio-single-1.html" class="work-ext-link">
                         <div class="work-img">
                             <div class="work-img-bg wow-p scalexIn"></div>
-                            <img src="{{ asset('public/images/portfolio/projects-2.jpg') }}" alt="Work Description"
+                            <img src="{{ asset('public/public/images/portfolio/projects-2.jpg') }}" alt="Work Description"
                                  class="wow-p fadeIn" data-wow-delay="1s" />
                         </div>
                         <div class="work-intro">
@@ -311,7 +311,7 @@
                     <a href="portfolio-single-1.html" class="work-ext-link">
                         <div class="work-img">
                             <div class="work-img-bg wow-p scalexIn"></div>
-                            <img src="{{ asset('public/images/portfolio/projects-3.jpg') }}" alt="Work Description"
+                            <img src="{{ asset('public/public/images/portfolio/projects-3.jpg') }}" alt="Work Description"
                                  class="wow-p fadeIn" data-wow-delay="1s" />
                         </div>
                         <div class="work-intro">
@@ -329,7 +329,7 @@
                     <a href="portfolio-single-1.html" class="work-ext-link">
                         <div class="work-img">
                             <div class="work-img-bg wow-p scalexIn"></div>
-                            <img src="{{ asset('public/images/portfolio/projects-4.jpg') }}" alt="Work Description"
+                            <img src="{{ asset('public/public/images/portfolio/projects-4.jpg') }}" alt="Work Description"
                                  class="wow-p fadeIn" data-wow-delay="1s" />
                         </div>
                         <div class="work-intro">
@@ -347,7 +347,7 @@
                     <a href="portfolio-single-1.html" class="work-ext-link">
                         <div class="work-img">
                             <div class="work-img-bg wow-p scalexIn"></div>
-                            <img src="{{ asset('public/images/portfolio/projects-5.jpg') }}" alt="Work Description"
+                            <img src="{{ asset('public/public/images/portfolio/projects-5.jpg') }}" alt="Work Description"
                                  class="wow-p fadeIn" data-wow-delay="1s" />
                         </div>
                         <div class="work-intro">
@@ -365,7 +365,7 @@
                     <a href="images/portfolio/full-project-6.jpg" class="work-lightbox-link mfp-image">
                         <div class="work-img">
                             <div class="work-img-bg wow-p scalexIn"></div>
-                            <img src="{{ asset('public/images/portfolio/projects-6.jpg') }}" alt="Work Description"
+                            <img src="{{ asset('public/public/images/portfolio/projects-6.jpg') }}" alt="Work Description"
                                  class="wow-p fadeIn" data-wow-delay="1s" />
                         </div>
                         <div class="work-intro">
@@ -492,17 +492,17 @@
                     <div class="call-action-2-images">
 
                         <div class="call-action-2-image-1">
-                            <img src="{{ asset('public/images/promo-3.jpg') }}" alt="" class="wow scaleOutIn"
+                            <img src="{{ asset('public/public/images/promo-3.jpg') }}" alt="" class="wow scaleOutIn"
                                  data-wow-duration="1.2s" data-wow-offset="255" />
                         </div>
 
                         <div class="call-action-2-image-2">
-                            <img src="{{ asset('public/images/promo-4.jpg') }}" alt="" class="wow scaleOutIn"
+                            <img src="{{ asset('public/public/images/promo-4.jpg') }}" alt="" class="wow scaleOutIn"
                                  data-wow-duration="1.2s" data-wow-offset="134" />
                         </div>
 
                         <div class="call-action-2-image-3">
-                            <img src="{{ asset('public/images/promo-5.jpg') }}" alt="" class="wow scaleOutIn"
+                            <img src="{{ asset('public/public/images/promo-5.jpg') }}" alt="" class="wow scaleOutIn"
                                  data-wow-duration="1.2s" data-wow-offset="0" />
                         </div>
 
@@ -655,13 +655,13 @@
                     <div class="call-action-3-images mt-xs-0 text-end">
 
                         <div class="call-action-3-image-1">
-                            <img src="{{ asset('public/images/promo-6.jpg') }}" alt="" class="wow scaleOutIn"
+                            <img src="{{ asset('public/public/images/promo-6.jpg') }}" alt="" class="wow scaleOutIn"
                                  data-wow-duration="1.2s" data-wow-offset="205" />
                         </div>
 
                         <div class="call-action-3-image-2-wrap d-flex align-items-center">
                             <div class="call-action-3-image-2">
-                                <img src="{{ asset('public/images/promo-7.jpg') }}" alt="" class="wow scaleOutIn"
+                                <img src="{{ asset('public/public/images/promo-7.jpg') }}" alt="" class="wow scaleOutIn"
                                      data-wow-duration="1.2s" />
                             </div>
                         </div>
@@ -678,7 +678,7 @@
 
     <!-- Testimonials Section -->
     <section class="page-section bg-dark bg-dark-alfa-70 bg-scroll light-content"
-             data-background="{{ asset('public/images/full-width-images/section-bg-2.jpg') }}">
+             data-background="{{ asset('public/public/images/full-width-images/section-bg-2.jpg') }}">
         <div class="container relative">
 
             <div class="row">

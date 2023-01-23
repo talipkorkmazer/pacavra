@@ -5,7 +5,7 @@
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
             <a href="/" class="logo">
-                <img src="{{ asset('public/images/pacavra/logo.jpeg') }}" alt="Pacavra" width="188" height="37" />
+                <img src="{{ asset('public/public/images/pacavra/logo.jpeg') }}" alt="Pacavra" width="188" height="37" />
             </a>
         </div>
 

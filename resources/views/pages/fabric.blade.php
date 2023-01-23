@@ -1,5 +1,5 @@
 @php use App\Helpers\BladeHelper; @endphp
-<script src="{{ asset('public/js/3d/3d.js') }}" type="text/javascript"></script>
+<script src="{{ asset('public/public/js/3d/3d.js') }}" type="text/javascript"></script>
 
 @extends('layouts.default')
 @section('content')

@@ -21,7 +21,7 @@
         </div>
         <!-- End Footer Text -->
         <a href='https://www.creabuss.com/' target='_blank'>
-            <img style='width: 100px' src='{{ asset('public/images/pacavra/creabuss.png') }}' alt='Creabuss'>
+            <img style='width: 100px' src='{{ asset('public/public/images/pacavra/creabuss.png') }}' alt='Creabuss'>
         </a>
     </div>
 
