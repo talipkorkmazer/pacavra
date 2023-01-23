@@ -3,7 +3,7 @@
 @section('content')
     <!-- Home Section -->
     <section class="small-section bg-dark-alfa-50 bg-scroll light-content"
-             data-background="{{ asset("/public/$category->image") }}" id="home"
+             data-background="{{ asset("/public/public/$category->image") }}" id="home"
              style="background-image: url({{ asset("/public/public/$category->image") }});">
         <div class="container relative">
 
