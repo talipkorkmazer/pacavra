@@ -52,7 +52,7 @@ function init(texture = null) {
   controls.addEventListener('change', render);
 
   let loader = new GLTFLoader();
-  loader.load('/public/models/sofa_grey_fabric/scene.gltf', function(gltf) {
+  loader.load('/public/public/models/sofa_grey_fabric/scene.gltf', function(gltf) {
     const sofaScene = gltf.scene;
     const sofa = sofaScene.children[0];
     if (mobileCheck()) {
