@@ -18,6 +18,6 @@
 <link rel="stylesheet" href="{{ asset('public/public/css/magnific-popup.css') }}">
 <link rel="stylesheet" href="{{ asset('public/public/css/owl.carousel.css') }}">
 <link rel="stylesheet" href="{{ asset('public/public/css/animate.min.css') }}">
-<link rel="stylesheet" href="{{ asset('public/public/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('public/public/css/style.css') }}?v=1">
 <link rel="stylesheet" href="{{ asset('public/public/css/custom.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
