@@ -57,7 +57,7 @@ class FabricCategoryController extends Controller
         $fabrics = Fabric::where('fabric_category_id', $category->id)->simplePaginate(12);
 
         $renderedView = Redis::get("rendered_fabric_category.$slug");
-        if ($renderedView === null) {
+        if (true || $renderedView === null) {
             $renderedView = view('pages.category', compact('category', 'fabrics'))->render();
             Redis::set("rendered_fabric_category.$slug", $renderedView);
         }
