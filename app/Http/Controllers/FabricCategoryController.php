@@ -56,13 +56,12 @@ class FabricCategoryController extends Controller
         $category = FabricCategory::all()->where('slug', $slug)->first();
         $fabrics = Fabric::where('fabric_category_id', $category->id)->simplePaginate(12);
 
-        $renderedView = Redis::get("rendered_fabric_category.$slug");
-        if ($renderedView === null) {
-            $renderedView = view('pages.category', compact('category', 'fabrics'))->render();
-            Redis::set("rendered_fabric_category.$slug", $renderedView);
-        }
+        //$renderedView = Redis::get("rendered_fabric_category.$slug");
+        //if ($renderedView === null) {
+        //Redis::set("rendered_fabric_category.$slug", $renderedView);
+        //}
 
-        return $renderedView;
+        return view('pages.category', compact('category', 'fabrics'));
     }
 
     /**
