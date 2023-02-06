@@ -66,7 +66,13 @@ class FabricCategoryController extends Controller
             Redis::set("fabrics.$slug", json_encode($fabrics->toArray()));
         }
 
-        return view('pages.category', compact('category', 'fabrics'));
+        $renderedView = Redis::get("fabric_category.$slug");
+        if ($renderedView === null) {
+            $renderedView = view('pages.category', compact('category', 'fabrics'))->render();
+            Redis::set("fabric_category.$slug", $renderedView);
+        }
+
+        return $renderedView;
     }
 
     /**
