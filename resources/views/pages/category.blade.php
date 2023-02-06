@@ -39,12 +39,11 @@
 
     <!-- Section -->
     <section class="page-section pt-0">
-        <div class="container relative">
-
+        <div style="margin-top: 3%;" class="container relative">
             <!-- Photo Grid -->
             <div class="row mb-30 mb-xs-10">
                 <!-- Photo Item -->
-                @foreach ($fabrics as $fabric)
+                @foreach ($fabrics->items() as $fabric)
                     <div class="col-md-3">
                         @php
                             $image = BladeHelper::getImages($fabric->images)[0];
@@ -57,9 +56,9 @@
                     </div>
                     <!-- End Photo Item -->
                 @endforeach
+                {{ $fabrics->links() }}
             </div>
             <!-- End Photo Grid -->
-
         </div>
     </section>
     <!-- End Section -->

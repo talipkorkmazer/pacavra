@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Fabric;
+use App\FabricCategory;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
-use App\FabricCategory;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -53,23 +53,13 @@ class FabricCategoryController extends Controller
      */
     public function show($slug)
     {
-        $category = Redis::get("categories.$slug");
-        $fabrics = Redis::get("fabrics.$slug");
-        if ($category !== null) {
-            $category = json_decode($category);
-            $fabrics = json_decode($fabrics);
-        } else {
-            $category = FabricCategory::all()->where('slug', $slug)->first();
-            Redis::set("categories.$slug", json_encode($category->toArray()));
+        $category = FabricCategory::all()->where('slug', $slug)->first();
+        $fabrics = Fabric::where('fabric_category_id', $category->id)->simplePaginate(12);
 
-            $fabrics = Fabric::all()->where('fabric_category_id', $category->id);
-            Redis::set("fabrics.$slug", json_encode($fabrics->toArray()));
-        }
-
-        $renderedView = Redis::get("fabric_category.$slug");
+        $renderedView = Redis::get("rendered_fabric_category.$slug");
         if ($renderedView === null) {
             $renderedView = view('pages.category', compact('category', 'fabrics'))->render();
-            Redis::set("fabric_category.$slug", $renderedView);
+            Redis::set("rendered_fabric_category.$slug", $renderedView);
         }
 
         return $renderedView;

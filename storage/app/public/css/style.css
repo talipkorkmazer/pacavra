@@ -5430,7 +5430,7 @@ a.blog-item-more:hover {
     font-size: 13px;
 }
 
-.pagination a {
+.pagination a, .pagination span {
     display: inline-block;
     min-width: 46px;
     margin-right: 5px;
@@ -5446,6 +5446,10 @@ a.blog-item-more:hover {
     border-radius: 3px;
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.page-item.disabled {
+    opacity: .5;
 }
 
 .pagination .fa {
@@ -7227,4 +7231,9 @@ table.shopping-cart-table tr td {
 
 .page-section.fabric {
     margin-top: 125px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 5%;
 }
