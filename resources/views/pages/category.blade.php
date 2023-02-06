@@ -44,7 +44,7 @@
             <!-- Photo Grid -->
             <div class="row mb-30 mb-xs-10">
                 <!-- Photo Item -->
-                @foreach ($category->fabrics as $fabric)
+                @foreach ($fabrics as $fabric)
                     <div class="col-md-3">
                         @php
                             $image = BladeHelper::getImages($fabric->images)[0];
