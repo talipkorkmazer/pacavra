@@ -768,6 +768,7 @@
                                 </div>
                                 <div class="ci-text">
                                     Ofis: <a href="tel:0216 5264020">0216 526 40 20</a>
+                                    <br>
                                     Cep: <a href="tel:0555 012 20 42">0555 012 20 42</a>
                                 </div>
                             </div>
