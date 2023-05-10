@@ -42,20 +42,39 @@
         <div style="margin-top: 3%;" class="container relative">
             <!-- Photo Grid -->
             <div class="row mb-30 mb-xs-10">
-                <!-- Photo Item -->
-                @foreach ($fabrics->items() as $fabric)
-                    <div class="col-md-3">
-                        @php
-                            $image = BladeHelper::getImages($fabric->images)[0];
-                        @endphp
-                        <div class="post-prev-img mb-30 wow fadeScaleIn" data-wow-duration="1s">
-                            <a href="/fabric/{{ $fabric->slug }}" class="">
-                                <img src="{{ asset("public/public/$image") }}" alt="{{ $fabric->name }}" /></a>
+                <div class="col-3">
+                    <h4>Collections</h4>
+                    @foreach ($collections as $collection)
+                        <div class="form-check">
+                            <input class="form-check-input"
+                                   @if(array_key_exists('collection', $params) &&(int) $params['collection'] === (int) $collection['id']) checked
+                                   @endif type="checkbox" value="{{ $collection['id'] }}"
+                                   id="{{ $collection['name'] }}">
+                            <label class="form-check-label" for="{{ $collection['name'] }}">
+                                {{ $collection['name'] }}
+                            </label>
                         </div>
-                        <h3>{{ $fabric->name }}</h3>
+                    @endforeach
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        @foreach ($fabrics->items() as $fabric)
+                            <div class="col-md-3">
+                                @php
+                                    $image = BladeHelper::getImages($fabric->images)[0];
+                                @endphp
+                                <div class="post-prev-img mb-10 wow fadeScaleIn" data-wow-duration="1s">
+                                    <a href="/fabric/{{ $fabric->slug }}" class="">
+                                        <img src="{{ asset("public/public/$image") }}" alt="{{ $fabric->name }}"/></a>
+                                </div>
+                                <h4 class="text-center">{{ $fabric->name }}</h4>
+                            </div>
+                            <!-- End Photo Item -->
+                        @endforeach
                     </div>
-                    <!-- End Photo Item -->
-                @endforeach
+                </div>
+
+
                 {{ $fabrics->links() }}
             </div>
             <!-- End Photo Grid -->

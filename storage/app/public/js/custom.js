@@ -22,4 +22,15 @@
     a.click()
     document.body.removeChild(a)
   }
+
+  $('.form-check-input').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('.form-check-input').prop('checked', false);
+      $(this).prop('checked', true);
+      const id = $(this).val();
+      window.location.href = `${window.location.pathname}?collection=${id}`;
+    } else {
+      window.location.href = `${window.location.pathname}`;
+    }
+  });
 })(jQuery);

@@ -1,3 +1,23 @@
 .fa-download {
     cursor: pointer;
 }
+
+.fabric-specifications * {
+    font-family: sans-serif;
+}
+
+.fabric-specifications h4 {
+    position: relative;
+    line-height: 1.2em;
+}
+
+.fabric-specifications h4:before {
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    height: 0;
+    width: 50px;
+    content: '';
+    border-top: 1px solid black;
+}
+

@@ -14,7 +14,7 @@
 
             <!-- Copyright -->
             <div class="footer-copy">
-                Tüm Hakları Paçavra Tekstil tarafından Saklıdır. © 2023
+                Copyright © 2023 | PatchWork
             </div>
             <!-- End Copyright -->
 

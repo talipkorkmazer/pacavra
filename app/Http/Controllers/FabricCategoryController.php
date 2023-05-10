@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Fabric;
 use App\FabricCategory;
+use App\FabricCollection;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Redis;
 
 class FabricCategoryController extends Controller
 {
@@ -53,15 +53,21 @@ class FabricCategoryController extends Controller
      */
     public function show($slug)
     {
+        $params = request()->all();
         $category = FabricCategory::all()->where('slug', $slug)->first();
-        $fabrics = Fabric::where('fabric_category_id', $category->id)->simplePaginate(12);
 
-        //$renderedView = Redis::get("rendered_fabric_category.$slug");
-        //if ($renderedView === null) {
-        //Redis::set("rendered_fabric_category.$slug", $renderedView);
-        //}
+        if (in_array('collection', $params)) {
+            $fabrics = Fabric::query()
+                ->with('collections')
+                ->whereHas('collections', function ($query) use ($params) {
+                    $query->where('fabric_collection_id', $params['collection']);
+                })->simplePaginate(12);
+        } else {
+            $fabrics = Fabric::where('fabric_category_id', $category->id)->simplePaginate(12);
+        }
+        $collections = FabricCollection::all()->toArray();
 
-        return view('pages.category', compact('category', 'fabrics'));
+        return view('pages.category', compact('category', 'fabrics', 'collections', 'params'));
     }
 
     /**

@@ -19,11 +19,11 @@
         <div class="inner-nav desktop-nav">
             <ul class="clearlist scroll-nav local-scroll">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">Hakkımızda</a></li>
+                <li><a href="/about">About us</a></li>
                 <li>
                     <a href="#" class="mn-has-sub" role="button" aria-expanded="false" aria-haspopup="true"
                        style="height: 85px; line-height: 85px;">
-                        Kategoriler
+                        Categories
                         <i class="mn-has-sub-icon"></i>
                     </a>
                     <ul class="mn-sub mn-has-multi" style="display: none;">
@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="/#contact">İletişim</a></li>
+                <li><a href="/#contact">Contact</a></li>
             </ul>
         </div>
         <!-- End Main Menu -->

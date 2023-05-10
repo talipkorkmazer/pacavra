@@ -13,6 +13,7 @@ class Fabric extends Model
         'slug',
         'description',
         'images',
+        'specifications'
     ];
 
 
