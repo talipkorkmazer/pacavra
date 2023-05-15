@@ -16,6 +16,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        if (session()->get(session()->getId()) === true) {
+            return view('pages.home');
+        } else {
+            return view('pages.choose_site');
+        }
     }
+
+    public function show()
+    {
+        session([session()->getId() => true]);
+        return redirect()->route('home');
+    }
+
+
 }
