@@ -18,7 +18,9 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/show', [HomeController::class, 'show']);
 
 Route::get('/category/{slug}', [FabricCategoryController::class, 'show']);
 

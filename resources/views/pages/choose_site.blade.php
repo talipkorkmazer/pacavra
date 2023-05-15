@@ -16,7 +16,7 @@
     <div class="container">
         <div class="logos">
             <div class="logo">
-                <a href="https://patchwork.com.tr/">
+                <a href="https://patchwork.com.tr/show">
                     <img src="{{ asset('public/public/images/pacavra/logo.jpeg') }}" alt="Marka 1">
                 </a>
             </div>
