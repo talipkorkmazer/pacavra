@@ -1,18 +1,5 @@
 @extends('layouts.welcome')
 @section('content')
-    <!--    <div class="row">
-        <div class="col-6">
-            <a class="link" href="#">
-                <img class="logo-img" src="{{ asset('public/public/images/pacavra-siyah.jpeg') }}" >
-            </a>
-        </div>
-        <div class="col-6">
-            <a class="link" href="#">
-                <img class="logo-img" src="{{ asset('public/public/images/pacavra/logo.jpeg') }}" >
-            </a>
-        </div>
-    </div>-->
-
     <div class="container">
         <div class="logos">
             <div class="logo">
@@ -34,19 +21,6 @@
             için bizi tercih edin.
         </p>
     </div>
-
-    <!--    <section class="">
-
-        <div class="container-fluid">
-            <div class="row">
-                <img class="col-6 vh-100 logo-img" src="{{ asset('public/public/images/pacavra/logo.jpeg') }}"
-                     alt="Patch Work"/>
-                <img class="col-6 vh-100 logo-img" src="{{ asset('public/public/images/pacavra-beyaz.jpeg') }}"
-                     alt="Pacavra"/>
-            </div>
-        </div>
-
-    </section>-->
 @endsection
 <style>
     body {

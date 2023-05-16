@@ -20,7 +20,6 @@
             <ul class="clearlist scroll-nav local-scroll">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/about">About us</a></li>
-                @if(auth()->check())
                     <li>
                         <a href="#" class="mn-has-sub" role="button" aria-expanded="false" aria-haspopup="true"
                            style="height: 85px; line-height: 85px;">
@@ -43,7 +42,6 @@
                             </li>
                         </ul>
                     </li>
-                @endif
                 <li><a href="/#contact">Contact</a></li>
                 <li>
                     @if(auth()->check())
