@@ -4,7 +4,7 @@
         <div class="logos">
             <div class="logo">
                 <a href="https://patchwork.com.tr/">
-                    <img src="{{ asset('public/public/images/pacavra/logo.jpeg') }}" alt="Marka 1">
+                    <img src="{{ asset('public/public/images/pacavra/87C24AD5-BB94-408A-9D82-CBC00C5C986F.PNG') }}" alt="Marka 1">
                 </a>
             </div>
             <div class="logo">
