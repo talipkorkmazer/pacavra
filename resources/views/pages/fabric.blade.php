@@ -14,8 +14,6 @@
         <div class="container relative mr-3">
 
             <div class="row">
-                <!--<div id='canvas' class="col-lg-7 mb-md-60 wow fadeScaleIn animated" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeScaleIn;"></div>-->
-
                 <div class="col-lg-7 mb-md-60 wow fadeScaleIn animated" data-wow-duration="1.5s"
                      style="visibility: visible; animation-duration: 1.5s; animation-name: fadeScaleIn;">
                     <a href="{{ asset("public/public/$images[0]") }}" data-fancybox>
@@ -49,7 +47,7 @@
             </div>
             <hr>
             <div class="fabric-specifications">
-                <h4 style="position: relative;line-height: 1.2em;">Specifications</h4>
+                <h4 style="position: relative;line-height: 1.2em;">{{ __('all.specifications') }}</h4>
                 {!! $fabric->specifications !!}
             </div>
         </div>

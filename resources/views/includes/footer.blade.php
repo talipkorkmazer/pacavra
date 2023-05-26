@@ -4,8 +4,14 @@
 
         <!-- Social Links -->
         <div class="footer-social-links mb-90 mb-xs-40">
-            <a href="https://www.facebook.com/Pa%C3%A7avra-Inter%C4%B1or-Des%C4%B1gn-2071029359783380/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i> <span class="sr-only">Facebook profile</span></a>
-            <a href="https://www.instagram.com/pacavrainterior/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i> <span class="sr-only">Instagram profile</span></a>
+            <a href="https://www.facebook.com/Pa%C3%A7avra-Inter%C4%B1or-Des%C4%B1gn-2071029359783380/" title="Facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                <span class="sr-only">{{ __('all.facebook_profile') }}</span>
+            </a>
+            <a href="https://www.instagram.com/pacavrainterior/" title="Instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span class="sr-only">{{ __('all.instagram_profile') }}</span>
+            </a>
         </div>
         <!-- End Social Links -->
 
@@ -27,7 +33,7 @@
 
     <!-- Top Link -->
     <div class="local-scroll">
-        <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">Scroll to top</span></a>
+        <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">{{ __('all.scroll_to_top') }}</span></a>
     </div>
     <!-- End Top Link -->
 

@@ -28,6 +28,4 @@ class HomeController extends Controller
         session([session()->getId() => true]);
         return redirect()->route('home');
     }
-
-
 }

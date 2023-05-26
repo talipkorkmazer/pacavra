@@ -2,7 +2,7 @@
 @section('content')
     <!-- Home Section -->
     <section class="home-section parallax-5"
-             data-background="{{ asset('public/public/images/pacavra/IMG-20181023-WA0002.jpg') }}" id="home">
+             data-background="{{ asset('public/public/images/pacavra/15.jpg') }}" id="home">
         <div class="container min-height-100vh d-flex align-items-center pt-100 pb-100">
 
             <!-- Hero Content -->
@@ -169,9 +169,9 @@
         <div class="container relative">
 
             <div class="text-center mb-80 mb-sm-50">
-                <h2 class="section-title">Kumaşlarımız</h2>
+                <h2 class="section-title">{{ __('all.our_fabrics') }}</h2>
                 <p class="section-title-descr">
-                    Kumaşlarımızı inceleyin.
+                    {{ __('all.take_a_look') }}
                 </p>
             </div>
 
@@ -746,9 +746,9 @@
         <div class="container relative">
 
             <div class="text-center mb-80 mb-sm-50">
-                <h2 class="section-title">İletişim</h2>
+                <h2 class="section-title">{{ __('all.contact') }}</h2>
                 <p class="section-title-descr">
-                    Yeni projelerinizde yanınızdayız
+                    {{ __('all.live_with_new_projects') }}
                 </p>
             </div>
 
@@ -764,12 +764,12 @@
                                     <i class="fa fa-phone-alt"></i>
                                 </div>
                                 <div class="ci-title">
-                                    Bizi arayın
+                                    {{ __('all.call_us') }}
                                 </div>
                                 <div class="ci-text">
-                                    Ofis: <a href="tel:0216 5264020">0216 526 40 20</a>
+                                    {{ __('all.office') }}: <a href="tel:0216 5264020">0216 526 40 20</a>
                                     <br>
-                                    Cep: <a href="tel:0555 012 20 42">0555 012 20 42</a>
+                                    {{ __('all.cellphone') }}: <a href="tel:0555 012 20 42">0555 012 20 42</a>
                                 </div>
                             </div>
                         </div>
@@ -782,7 +782,7 @@
                                     <i class="fa fa-map-marker-alt"></i>
                                 </div>
                                 <div class="ci-title">
-                                    Adres
+                                    {{ __('all.address') }}
                                 </div>
                                 <div class="ci-text">
                                     Y.Dudullu Mah. Necip Fazıl Bulvarı
@@ -790,7 +790,7 @@
                                     Ümraniye / İstanbul
                                 </div>
                                 <div class="ci-link">
-                                    <a href="https://goo.gl/maps/NQDszkp4odjZwdNw5" target="_blank">Haritada Gör</a>
+                                    <a href="https://goo.gl/maps/NQDszkp4odjZwdNw5" target="_blank">{{ __('all.look_map') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -803,7 +803,7 @@
                                     <i class="fa fa-envelope"></i>
                                 </div>
                                 <div class="ci-title">
-                                    Email
+                                    {{ __('all.email') }}
                                 </div>
                                 <div class="ci-link">
                                     <a href="mailto:info@pacavratekstil.com">info@pacavratekstil.com</a>
@@ -922,5 +922,5 @@
         </div>
     </section>--}}
     <!-- End Call Action Section -->
-    <a id="video" data-fancybox="video-gallery" href="{{ asset('public/public/video/IMG_4091.mp4') }}"></a>
+<!--    <a id="video" data-fancybox="video-gallery" href="{{ asset('public/public/video/IMG_4091.mp4') }}"></a>-->
 @endsection

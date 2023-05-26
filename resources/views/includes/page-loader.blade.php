@@ -1,5 +1,5 @@
 <!-- Page Loader -->
 <div class="page-loader">
-    <div class="loader">Loading...</div>
+    <div class="loader">{{ __('all.loading') }}</div>
 </div>
 <!-- End Page Loader -->

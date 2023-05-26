@@ -10,12 +10,14 @@
 
                     <li class="nav-item" role="presentation">
                         <a href="#account-login" class="nav-link active" id="account-login-tab" data-bs-toggle="tab"
-                           role="tab" aria-controls="account-login" aria-selected="true">Login</a>
+                           role="tab" aria-controls="account-login" aria-selected="true">{{ __('all.login') }}</a>
                     </li>
 
                     <li class="nav-item" role="presentation">
                         <a href="#account-registration" class="nav-link" id="account-registration-tab"
-                           data-bs-toggle="tab" role="tab" aria-controls="account-registration" aria-selected="false">Registration</a>
+                           data-bs-toggle="tab" role="tab" aria-controls="account-registration" aria-selected="false">
+                            {{ __('all.registration') }}
+                        </a>
                     </li>
 
                 </ul>
@@ -38,7 +40,7 @@
 
                                     <!-- Name -->
                                     <div class="form-group">
-                                        <label for="email">{{ __('E-Mail Address') }}</label>
+                                        <label for="email">{{ __('all.email') }}</label>
                                         <input id="email" type="email"
                                                class="input-lg round form-control @error('email') is-invalid @enderror"
                                                name="email" value="{{ old('email') }}" required autocomplete="email"
@@ -53,7 +55,7 @@
 
                                     <!-- Password -->
                                     <div class="form-group">
-                                        <label for="password">{{ __('Password') }}</label>
+                                        <label for="password">{{ __('all.password') }}</label>
                                         <input id="password" type="password"
                                                class="input-lg round form-control @error('password') is-invalid @enderror"
                                                name="password" required autocomplete="current-password">
@@ -89,7 +91,7 @@
 
                                     <!-- Email -->
                                     <div class="form-group">
-                                        <label for="email">{{ __('E-Mail Address') }}</label>
+                                        <label for="email">{{ __('all.email') }}</label>
 
                                         <input id="email" type="email"
                                                class="input-lg round form-control @error('email') is-invalid @enderror"
@@ -105,7 +107,7 @@
 
                                     <!-- Username -->
                                     <div class="form-group">
-                                        <label for="name">{{ __('Name') }}</label>
+                                        <label for="name">{{ __('all.name') }}</label>
                                         <input id="name" type="text"
                                                class="input-lg round form-control @error('name') is-invalid @enderror"
                                                name="name" value="{{ old('name') }}" required autocomplete="name">
@@ -119,7 +121,7 @@
 
                                     <!-- Password -->
                                     <div class="form-group">
-                                        <label for="password">{{ __('Password') }}</label>
+                                        <label for="password">{{ __('all.password') }}</label>
 
                                         <input id="password" type="password"
                                                class="input-lg round form-control @error('password') is-invalid @enderror"
@@ -135,7 +137,7 @@
 
                                     <!-- Re-enter Password -->
                                     <div class="form-group">
-                                        <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                        <label for="password-confirm">{{ __('all.confirm_password') }}</label>
 
                                         <input id="password-confirm" type="password" class="input-lg round form-control" name="password_confirmation" required autocomplete="new-password">
                                     </div>
@@ -154,11 +156,8 @@
                         </div>
                     </div>
                     <!-- End Registry Form -->
-
                 </div>
-
             </div>
-
         </div>
     </section>
 @endsection
