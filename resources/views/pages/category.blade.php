@@ -25,8 +25,8 @@
                 <div class="col-md-4 mt-30 wow fadeInUpShort animated"
                      style="visibility: visible; animation-name: fadeInUpShort;">
                     <div class="mod-breadcrumbs text-end">
-                        <a href="#">Home</a>&nbsp;<span class="mod-breadcrumbs-slash">•</span>&nbsp;<a
-                                href="#">Category</a>&nbsp;<span
+                        <a href="#">{{ __('all.home') }}</a>&nbsp;<span class="mod-breadcrumbs-slash">•</span>&nbsp;<a
+                                href="#">{{ __('all.categories') }}</a>&nbsp;<span
                                 class="mod-breadcrumbs-slash">•</span>&nbsp;<span>{{ $category->name }}</span>
                     </div>
                 </div>

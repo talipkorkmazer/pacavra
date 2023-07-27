@@ -3,8 +3,10 @@
 use App\Http\Controllers\FabricCategoryController;
 use App\Http\Controllers\FabricController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use TCG\Voyager\Facades\Voyager;
 
 /*
@@ -42,9 +44,11 @@ Route::get('/{locale?}', function ($locale = null) {
     return view('pages.home');
 });
 
-Route::get('language/{locale}', function ($locale) {
+Route::get('/language/{locale}', function ($locale) {
     app()->setLocale($locale);
+    Session::put('locale', $locale);
     session()->put('locale', $locale);
+    App::setLocale(Session::get('locale'));
     return redirect()->back();
 });
 

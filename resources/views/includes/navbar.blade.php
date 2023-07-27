@@ -40,7 +40,7 @@
                     </ul>
                 </li>
                 <li><a href="/#contact">{{ __('all.contact') }}</a></li>
-                <li>
+                <!--<li>
                     @if(auth()->check())
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -53,7 +53,7 @@
                     @else
                         <a href="{{ route('login') }}">{{ __('all.login_register') }}</a>
                     @endif
-                </li>
+                </li>-->
                 <li>
                     @foreach($available_locales as $locale_name => $available_locale)
                         @if($available_locale === $current_locale)
